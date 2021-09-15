@@ -1,16 +1,18 @@
 {
    "$schema":"https://specs.frictionlessdata.io/schemas/table-schema.json",
-   "name":"objets-importants",
-   "title":"Schéma des objets importants",
-   "description":"Spécification du fichier d'échange relatif aux objets importants gérés par les collectivités.",
+   "name":"flotte-publique-vehicule",
+   "title":"Renouvellement des flottes publiques par des véhicules à faibles et très faibles émissions",
+   "description":"Spécification des données fixant les termes et modalités de publication du pourcentage de véhicules à faibles et à très faibles émissions parmi les véhicules intégrés dans un renouvellement de parc",
    "keywords":[
-      "objets",
-      "autre-tag"
+      "faibles émissions",
+      "très faibles émissions",
+      "flotte",
+      "véhicule"
    ],
    "countryCode":"FR",
-   "homepage":"https://github.com/mon-orga/schema-objets-importants",
-   "path":"https://github.com/mon-orga/schema-objets-importants/raw/v0.1.1/schema.json",
-   "image":"https://github.com/mon-orga/schema-objets-importants/raw/v0.1.1/irve.png",
+   "homepage":"https://github.com/etalab/schema-flotte-publique-vehicule",
+   "path":"https://github.com/etalab/schema-flotte-publique-vehicule/raw/v0.1.0/schema.json",
+   "image":"",
    "licenses":[
       {
          "title":"Etalab Licence Ouverte 2.0",
@@ -22,55 +24,75 @@
       {
          "title":"Fichier valide (CSV)",
          "name":"exemple-valide-csv",
-         "path":"https://github.com/mon-orga/schema-objets-importants/raw/v0.1.1/exemple-valide.csv"
+         "path":"https://github.com/etalab/schema-flotte-publique-vehicule/raw/v0.1.0/exemple-valide.csv"
       }
    ],
    "sources":[
       {
-         "title":"Arrêté du 12 janvier 2017 relatif aux objets importants",
-         "path":"https://beta.legifrance.gouv.fr/codes/id/LEGISCTA000031367685/2020-05-25"
-      }
+         "title":"Arrêté du 29 décembre 2020 fixant les termes et modalités de publication du pourcentage de véhicules à faibles et à très faibles émissions parmi les véhicules intégrés dans un renouvellement de parc",
+         "path":"https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000042754492"
+      },
+      {
+         "title":"Décret n° 2020-1726 du 29 décembre 2020 relatif au suivi et à la publication du pourcentage de véhicules à faibles et à très faibles émissions parmi les véhicules ayant fait l'objet d'un renouvellement de parc conformément aux dispositions applicables à certaines personnes, pris pour l'application de l'article 79 de la loi n° 2019-1428 du 24 décembre 2019 d'orientation des mobilités",
+         "path":"https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000042754268"
+      },
+      {
+         "title":"LOI n° 2019-1428 du 24 décembre 2019 d'orientation des mobilités (1)",
+         "path": "https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000039666652"
    ],
-   "created":"2018-06-29",
-   "lastModified":"2019-05-06",
-   "version":"0.1.1",
+   "created":"2021-09-15",
+   "lastModified":"2021-09-15",
+   "version":"0.1.0",
    "contributors":[
       {
-         "title":"John Smith",
-         "email":"john.smith@etalab.gouv.fr",
+         "title":"Julieta Barado",
+         "email":"julieta.barado@data.gouv.fr",
          "organisation":"Etalab",
          "role":"author"
       },
       {
-         "title":"Jane Doe",
-         "email":"jane.doe@example.com",
-         "organisation":"Association très importante",
-         "role":"contributor"
-      }
+         "title":"Mario Restuccia",
+         "email":"mario.restuccia@data.gouv.fr",
+         "organisation":"Etalab",
+         "role":"author"
+      },
+      {
+         "title":"Geoffrey Aldebert",
+         "email":"geoffrey.aldebert@data.gouv.fr",
+         "organisation":"Etalab",
+         "role":"author"
+      },
+      {
+         "title":"Victor Bormand",
+         "email":"victor.bormand@developpement-durable.gouv.fr",
+         "organisation":"DGEC",
+         "role":"author"
+      },
    ],
    "fields":[
       {
-         "name":"id",
-         "description":"Un identifiant unique de l'objet.",
-         "example":"42",
-         "type":"integer",
+         "name":"sirenDeclarant",
+         "description":"Numéro SIREN de la personne morale déclarante",
+         "example":"130025265",
+         "type":"string",
          "constraints":{
             "required":true,
-            "minimum":1
+            "pattern": "^\\d{9}$"
          }
       },
       {
-         "name":"date_creation",
-         "description":"La date de création de l'objet, au format ISO 8601 AAAA-MM-DD.",
-         "example":"2020-02-27",
-         "type":"date",
+         "name":"sirenCouvert",
+         "description":"Numéro SIREN couvert sous la déclaration du sirenDéclarant",
+         "example":"130025265",
+         "type":"string",
          "constraints":{
-            "required":true
+            "required":true,
+            "pattern": "^\\d{9}$"
          }
       },
       {
          "name":"nom",
-         "description":"Le nom de l'objet.",
+         "description":"Dénomination officielle de la personne morale.",
          "example":"Brouette",
          "type":"string",
          "constraints":{
