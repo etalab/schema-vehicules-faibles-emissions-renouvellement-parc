@@ -68,7 +68,7 @@
          "email":"victor.bormand@developpement-durable.gouv.fr",
          "organisation":"DGEC",
          "role":"author"
-      },
+      }
    ],
    "fields":[
       {
@@ -106,8 +106,7 @@
          "example":"47.72B",
          "type":"string",
          "constraints":{
-            "required":true,
-            "pattern": "^\\d{6}$"
+            "required":true
          }
       },
       {
@@ -132,15 +131,6 @@
               "Zone B (2)",
               "Zone C (3)"
              ]
-         }
-      },
-      {
-         "name":"nbVP",
-         "description":"Nombre de voitures particulières (VP).",
-         "example":"12",
-         "type":"integer",
-         "constraints":{
-            "required":true
          }
       },
       {
@@ -659,7 +649,7 @@
       {
          "name":"pcentLDVFE",
          "description":"Part de véhicules à faibles émissions dans le renouvellement des flottes de véhicules de PTAC inférieur ou égal à 3,5 tonnes (VP+VUL). Correspond au quotient rapporté sur 100 de la somme des valeurs des champs nbVPclean, nbN1infclean et nbN1supclean sur la somme des valeurs des champs nbVP et nbN1.",
-         "example":"12",
+         "example":"12.2",
          "type":"number",
          "constraints":{
             "required":true
@@ -668,7 +658,7 @@
       {
          "name":"pcentLDVTFE",
          "description":"Part de véhicules à très faibles émissions dans le renouvellement des flottes de véhicules de PTAC inférieur ou égal à 3,5 tonnes (VP+VUL). Correspond au quotient rapporté sur 100 de la somme des valeurs des champs nbVPEL, nbVEH2, nbN1infEL, nbN1infH2, nbN1supEL et nbN1supH2, sur la somme des valeurs des champs nbVP et nbN1.",
-         "example":"12",
+         "example":"12.2",
          "type":"number",
          "constraints":{
             "required":true
@@ -677,7 +667,7 @@
       {
          "name":"pcentLDVclean",
          "description":"Part de véhicules à faibles émissions dans le renouvellement des flottes de véhicules légers (6). Correspond au quotient rapporté sur 100 de la somme des valeurs des champs nbVPclean, nbN1infclean, nbN1supclean, nbBusM2clean et nbCarM2clean, sur la somme des valeurs des champs nbVP, nbN1, nbBusM2 et nbCarM2.",
-         "example":"12",
+         "example":"12.2",
          "type":"number",
          "constraints":{
             "required":true
@@ -686,7 +676,7 @@
       {
          "name":"pcent23RMTFE",
          "description":"Part de véhicules à très faibles émissions dans le renouvellement des flottes de 2-3RM. Correspond au quotient rapporté sur 100 de la somme des valeurs des champs nbLEL et nbLH2 sur la valeur du champ nbL.",
-         "example":"12",
+         "example":"12.2",
          "type":"number",
          "constraints":{
             "required":true
@@ -695,7 +685,7 @@
       {
          "name":"pcentPLclean",
          "description":"Part de véhicules à faibles émissions dans le renouvellement des flottes de PL. Correspond au quotient rapporté sur 100 de la somme des valeurs des champs nbN23EL, nbN23H2, nbN23EHRE, nbN23GNV, nbN23GPL, nbN23Bio et nbN23XTL sur la valeur du champ nbN23.",
-         "example":"12",
+         "example":"12.2",
          "type":"number",
          "constraints":{
             "required":true
@@ -704,7 +694,7 @@
       {
          "name":"pcentTCFE",
          "description":"Part de véhicules à faibles émissions dans le renouvellement des flottes d'autobus et autocars. Correspond, en fonction de la valeur du champ zone, au quotient rapporté sur 100 de la somme des valeurs des champs relatifs aux autobus et autocars, à l'exception des champs nbBusM2clean, nbCarM2EL, nbCarM2H2 et nbCarM2clean, permettant de répondre aux dispositions pertinentes prévues aux articles D. 224-15-3, D. 224-15-4 et D. 224-15-6 du code de l'environnement, sur la somme des valeurs des champs nbBus et nbCar.",
-         "example":"12",
+         "example":"12.2",
          "type":"number",
          "constraints":{
             "required":true
@@ -713,7 +703,7 @@
       {
          "name":"pcentBusclean",
          "description":"Part de véhicules à faibles émissions dans le renouvellement des flottes d'autobus. Correspond au quotient rapporté sur 100 de la somme des valeurs des champs nbBusM3EL, nbBusM3H2, nbBusM3EHRE, nbBusM3GNV, nbBusM3bioGNV, nbBusM3GPL, nbBusM3Bio et nbBusM3XTL sur la valeur du champ nbBusM3.",
-         "example":"12",
+         "example":"12.2",
          "type":"number",
          "constraints":{
             "required":true
@@ -722,7 +712,7 @@
       {
          "name":"pcentBusTFE",
          "description":"Part de véhicules à très faibles émissions dans le renouvellement des flottes d'autobus. Correspond au quotient rapporté sur 100 de la somme des valeurs des champs nbBusM3EL et nbBusM3H2 sur la valeur du champ nbBusM3.",
-         "example":"12",
+         "example":"12.2",
          "type":"number",
          "constraints":{
             "required":true
