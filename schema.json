@@ -11,7 +11,7 @@
    ],
    "countryCode":"FR",
    "homepage":"https://github.com/etalab/schema-flotte-publique-vehicule",
-   "path":"https://github.com/etalab/schema-flotte-publique-vehicule/raw/v0.1.1/schema.json",
+   "path":"https://github.com/etalab/schema-flotte-publique-vehicule/raw/v0.1.2/schema.json",
    "image":"",
    "licenses":[
       {
@@ -24,7 +24,7 @@
       {
          "title":"Fichier valide (CSV)",
          "name":"exemple-valide-csv",
-         "path":"https://github.com/etalab/schema-flotte-publique-vehicule/raw/v0.1.1/exemple-valide.csv"
+         "path":"https://github.com/etalab/schema-flotte-publique-vehicule/raw/v0.1.2/exemple-valide.csv"
       }
    ],
    "sources":[
@@ -42,8 +42,8 @@
       }
    ],
    "created":"2021-09-15",
-   "lastModified":"2021-09-15",
-   "version":"0.1.1",
+   "lastModified":"2022-10-14",
+   "version":"0.1.2",
    "contributors":[
       {
          "title":"Julieta Barado",
@@ -117,6 +117,15 @@
          "constraints":{
             "required":true,
             "pattern": "^\\d{4}$"
+         }
+      },
+      {
+         "name": "annee",
+         "description": "L'année à laquelle se réfèrent les données rapportées.",
+         "example": "2021",
+         "type": "year",
+         "constraints": {
+            "required": true
          }
       },
       {
