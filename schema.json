@@ -121,7 +121,7 @@
       },
       {
          "name": "annee",
-         "description": "L'année à laquelle se réfèrent les données rapportées.",
+         "description": "Année concernée par les données rapportées.",
          "example": "2021",
          "type": "year",
          "constraints": {
