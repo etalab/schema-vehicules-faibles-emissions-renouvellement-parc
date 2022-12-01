@@ -1,12 +1,13 @@
 # Part des véhicules à faibles émissions dans le renouvellement d'un parc
 
-Spécification du fichier d’échange relatif aux données de renouvellement des parcs de véhicules et la part de véhicules à faibles émissions parmi eux.
+Spécification du fichier d'échange pour les données de renouvellement du parc automobile et la part des véhicules à faibles émissions parmi ceux-ci.
 
-Pour les entreprises de location, location-vente, crédit-bail de véhicules, les plateformes de livraison, ainsi que pour les centrales de réservation de taxi ou VTC, un schéma de données spécifique existe [sur cette page](https://schema.data.gouv.fr/etalab/schema-vehicules-faibles-emissions-renouvellement-parc-synthese/).
+Pour les sociétés de location de véhicules, de location-vente, de crédit-bail (leasing), les plateformes de livraison, ainsi que pour les centrales de réservation de taxis ou de VTC, il existe un schéma de données spécifique [sur cette page](https://schema.data.gouv.fr/etalab/schema-vehicules-faibles-emissions-renouvellement-parc-synthese/).
+
 
 ## Contexte
 
-Dans le but de constituer un suivi national des renouvellements de parcs de véhicules des acteurs publics et privés soumis aux obligations d’incorporation de véhicules à faibles émissions dans ces renouvellements prévues par la loi du 24 décembre 2019 d’orientation des mobilités, ouvert et accessible à tous, les personnes visées aux articles L. 224-7 à L. 224-10 du code de l’environnement  doivent, au plus tard le 30 septembre de chaque année, publier sur la plateforme data.gouv.fr les données statiques relatives aux renouvellements de parc effectués l’année précédente selon les dispositions de l’arrêté du 29 décembre 2020 modifié.
+Dans le but de constituer un suivi national des renouvellements de flotte des acteurs publics et privés soumis aux obligations d'intégration de véhicules à faibles émissions dans ces renouvellements prévues par la loi du 24 décembre 2019 d'orientation des mobilités, ouvert et accessible à tous, les personnes mentionnées aux articles `L. 224-7` à `L. 224-10` du code de l'environnement doivent, au plus tard le 30 septembre de chaque année, publier sur la plateforme [data.gouv.fr](https://www.data.gouv.fr/fr/) les données statiques relatives aux renouvellements de flotte effectués l'année précédente conformément aux dispositions de l'arrêté du 29 décembre 2020 modifié.
 
 ## Documents de cadrage juridique
 
@@ -15,17 +16,17 @@ Dans le but de constituer un suivi national des renouvellements de parcs de véh
 
 ## Création d'un fichier de données conforme
 
-Les données collectées doivent respecter un formalisme particulier (schéma de données) décrit sur [la section documentation](https://schema.data.gouv.fr/etalab/schema-vehicules-faibles-emissions-renouvellement-parc/latest/documentation.html) de cette page.
+Les données collectées doivent respecter un formalisme particulier (schéma de données) décrit dans la section documentation de cette [page](https://schema.data.gouv.fr/etalab/schema-vehicules-faibles-emissions-renouvellement-parc/latest/documentation.html).
 
-Les données sont à remplir au format CSV, encodage UTF-8.
+Les données sont à remplir au format `CSV`, encodage `UTF-8`.
 
 ## Utilisation de notre outil d'aide à la saisie
 
-Pour faciliter le remplissage des données, Etalab met à disposition un générateur CSV conforme au schéma de données, vous permettant de remplir les différents champs demandés. Cet outil vous permet de vous assurer que les données que vous remplissez sont au bon format et sont correctement référencées sur data.gouv.fr. Pour l'utiliser, rendez-vous sur [publier.etalab.studio](https://publier.etalab.studio/select?schema=etalab%2Fschema-vehicules-faibles-emissions-renouvellement-parc), vous pourrez alors publier votre fichier à partir : 
-- d'un formulaire
-- d'un tableur
-- d'un fichier csv déjà existant
+Pour faciliter le remplissage des données, Etalab met à disposition un générateur `CSV` conforme au schéma de données, vous permettant de remplir les différents champs demandés. Cet outil vous permet de vous assurer que les données que vous remplissez sont au bon format et sont correctement référencées sur [data.gouv.fr](https://www.data.gouv.fr/fr/). Pour l'utiliser, rendez-vous sur [publier.etalab.studio](https://publier.etalab.studio/select?schema=etalab%2Fschema-vehicules-faibles-emissions-renouvellement-parc), vous pourrez alors publier votre fichier à partir : 
+- d'un formulaire,
+- d'un tableur,
+- d'un fichier `csv` déjà existant.
 
-Une fois vos données chargées ou remplies, un formulaire vous proposera de les publier sur data.gouv.fr.
+Une fois vos données chargées ou remplies, un formulaire vous proposera de les publier sur [data.gouv.fr](https://www.data.gouv.fr/fr/).
 
-Merci de bien passer par [publier.etalab.studio](https://publier.etalab.studio/select?schema=etalab%2Fschema-vehicules-faibles-emissions-renouvellement-parc) pour publier vos données, afin qu'elles ne se soient pas dispersées pas dans data.gouv.fr.
+Veuillez utiliser [publier.etalab.studio](https://publier.etalab.studio/select?schema=etalab%2Fschema-vehicules-faibles-emissions-renouvellement-parc) pour publier vos données afin qu'elles ne se soient pas dispersées dans [data.gouv.fr](https://www.data.gouv.fr/fr/).
