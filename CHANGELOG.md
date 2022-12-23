@@ -2,6 +2,11 @@
 
 Ce fichier répertorie les changements entre différentes versions d'un schéma.
 
+## Version 0.1.3 - 2022-12-23
+
+- Ajout des options "Plusieurs zones" et "Non concerné" pour le champ Zone
+- Tous les champs sauf "sirenDeclarant","sirenCouvert","nom","naf","cj","annee" sont désormais optionnels
+
 ## Version 0.1.2 - 2022-10-14
 
 Ajout d'un champ pour indiquer l'année à laquelle se réfèrent les données rapportées
