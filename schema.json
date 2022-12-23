@@ -138,7 +138,9 @@
             "enum":[
               "Zone A",
               "Zone B",
-              "Zone C"
+              "Zone C",
+              "Plusieurs zones",
+              "Non concerné"
              ]
          }
       },
