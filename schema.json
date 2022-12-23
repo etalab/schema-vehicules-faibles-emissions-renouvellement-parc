@@ -24,7 +24,7 @@
       {
          "title":"Fichier valide (CSV)",
          "name":"exemple-valide-csv",
-         "path":"https://github.com/etalab/schema-flotte-publique-vehicule/raw/v0.1.2/exemple-valide.csv"
+         "path":"https://github.com/etalab/schema-flotte-publique-vehicule/raw/v0.1.3/exemple-valide.csv"
       }
    ],
    "sources":[
@@ -42,8 +42,8 @@
       }
    ],
    "created":"2021-09-15",
-   "lastModified":"2022-10-14",
-   "version":"0.1.2",
+   "lastModified":"2022-12-23",
+   "version":"0.1.3",
    "contributors":[
       {
          "title":"Julieta Barado",
@@ -77,7 +77,7 @@
          "example":"130025265",
          "type":"string",
          "constraints":{
-            "required":true,
+            "required": true,
             "pattern": "^\\d{9}$"
          }
       },
@@ -87,7 +87,7 @@
          "example":"130025265",
          "type":"string",
          "constraints":{
-            "required":true,
+            "required": true,
             "pattern": "^\\d{9}$"
          }
       },
@@ -97,7 +97,7 @@
          "example":"Direction interministerielle du numerique (DINUM)",
          "type":"string",
          "constraints":{
-            "required":true
+            "required": true
          }
       },
       {
@@ -106,7 +106,7 @@
          "example":"47.72B",
          "type":"string",
          "constraints":{
-            "required":true
+            "required": true
          }
       },
       {
@@ -115,7 +115,7 @@
          "example":"5710",
          "type":"string",
          "constraints":{
-            "required":true,
+            "required": true,
             "pattern": "^\\d{4}$"
          }
       },
@@ -134,11 +134,13 @@
          "example":"Zone A",
          "type":"string",
          "constraints":{
-            "required":true,
+            "required": false,
             "enum":[
               "Zone A",
               "Zone B",
-              "Zone C"
+              "Zone C",
+              "Plusieurs zones",
+              "Non concerné"
              ]
          }
       },
@@ -148,7 +150,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -157,7 +159,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -166,7 +168,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -175,7 +177,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -184,7 +186,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -193,7 +195,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -202,7 +204,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -211,7 +213,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -220,7 +222,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -229,7 +231,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -238,7 +240,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -247,7 +249,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -256,7 +258,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -265,7 +267,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -274,7 +276,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -283,7 +285,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -292,7 +294,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -301,7 +303,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -310,7 +312,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -319,7 +321,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -328,7 +330,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -337,7 +339,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -346,7 +348,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -355,7 +357,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -364,7 +366,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -373,7 +375,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -382,7 +384,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -391,7 +393,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -400,7 +402,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -409,7 +411,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -418,7 +420,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -427,7 +429,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -436,7 +438,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -445,7 +447,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -454,7 +456,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -463,7 +465,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -472,7 +474,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -481,7 +483,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -490,7 +492,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -499,7 +501,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -508,7 +510,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -517,7 +519,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -526,7 +528,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -535,7 +537,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -544,7 +546,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -553,7 +555,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -562,7 +564,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -571,7 +573,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -580,7 +582,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -589,7 +591,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -598,7 +600,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -607,7 +609,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -616,7 +618,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -625,7 +627,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -634,7 +636,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -643,7 +645,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -652,7 +654,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -661,7 +663,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -670,7 +672,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -679,7 +681,7 @@
          "example":"12",
          "type":"integer",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -688,7 +690,7 @@
          "example":"12.2",
          "type":"number",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -697,7 +699,7 @@
          "example":"12.2",
          "type":"number",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -706,7 +708,7 @@
          "example":"12.2",
          "type":"number",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -715,7 +717,7 @@
          "example":"12.2",
          "type":"number",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -724,7 +726,7 @@
          "example":"12.2",
          "type":"number",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -733,7 +735,7 @@
          "example":"12.2",
          "type":"number",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -742,7 +744,7 @@
          "example":"12.2",
          "type":"number",
          "constraints":{
-            "required":true
+            "required": false
          }
       },
       {
@@ -751,7 +753,7 @@
          "example":"12.2",
          "type":"number",
          "constraints":{
-            "required":true
+            "required": false
          }
       }
    ]
